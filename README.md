@@ -36,6 +36,27 @@ The dataset is a simulation of real-world supply chain data and includes operati
 
 ## Project Workflow
 
+1. Data import and ETL process using Python, Pandas and PostgreSQL
+2. Data cleaning and validation: 
+- NULL values analysis, 
+- duplicate check, 
+- schema inspection, 
+- date formatting 
+3. KPI and operational analysis: 
+- revenue and profitability analysis,
+- delivery performance analysis,
+- shipping efficiency evaluation,
+- regional performance analysis
+4. Advanced SQL analysis:
+- window functions,
+- CTEs,
+- ranking analysis,
+- moving averages and trend analysis. 
+5. Profitability deep analysis: 
+- margin analysis,
+- high revenue / low profit products,
+- customer profitability analysis
+
 ## Key Business Questions
 
 ## Key Insights
