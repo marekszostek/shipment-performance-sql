@@ -27,6 +27,13 @@ The dataset is a simulation of real-world supply chain data and includes operati
 
 ## Tech Stack
 
+- PostgreSQL & SQL - data storage and cleaning, KPI analysis and advanced analytics
+- Python - ETL process and CSV import
+- Pandas - data loading and preparation,
+- SQLAlchemy - PostgreSQL connection and automated data import
+- Git & GitHub - version control and project documentation
+- VS Code - project development and management 
+
 ## Project Workflow
 
 ## Key Business Questions
