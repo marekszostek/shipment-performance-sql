@@ -1,5 +1,8 @@
 import pandas as pd
 from sqlalchemy import create_engine
+from dotenv import load_dotenv
+import os
+load_dotenv()
 
 # =========================
 # LOAD CSV
@@ -25,11 +28,11 @@ print(df.columns)
 # POSTGRES CONNECTION
 # =========================
 
-username = "postgres"
-password = "Lukasz"
-host = "localhost"
-port = "5432"
-database = "supply_chain_analysis"
+username = os.getenv("DB_USER")
+password = os.getenv("DB_PASSWORD")
+host = os.getenv("DB_HOST")
+port = os.getenv("DB_PORT")
+database = os.getenv("DB_NAME")
 
 engine = create_engine(
     f'postgresql+psycopg2://{username}:{password}@{host}:{port}/{database}'

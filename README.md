@@ -25,6 +25,13 @@ The project uses the DataCo Smart Supply Chain dataset. It contains over 180,000
 
 The dataset is a simulation of real-world supply chain data and includes operational, financial and customer-related data which are used to conduct business analysis.
 
+### Data Source
+
+DataCo Smart Supply Chain dataset sourced from Kaggle for educational and portfolio purposes.
+
+Source:
+https://www.kaggle.com/datasets/shashwatwork/dataco-smart-supply-chain-for-big-data-analysis
+
 ## Tech Stack
 
 - PostgreSQL & SQL - data storage and cleaning, KPI analysis and advanced analytics
