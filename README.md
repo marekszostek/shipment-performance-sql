@@ -98,3 +98,8 @@ The dataset is a simulation of real-world supply chain data and includes operati
 - Operational and profitability analytics
 
 ## Future Improvements
+
+- Build an interactive Power BI dashboard for operational and profitability monitoring
+- Add sales and delivery forecasting analysis
+- Automate the ETL pipeline for regular database updates
+- Expand customer segmentation and profitability analysis
