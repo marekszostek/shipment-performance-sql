@@ -81,4 +81,18 @@ The dataset is a simulation of real-world supply chain data and includes operati
 
 ## SQL Techniques Used
 
+- Aggregation functions (SUM, AVG, COUNT)
+- GROUP BY analysis
+- Common Table Expressions (CTEs)
+- Window functions:
+  - RANK()
+  - DENSE_RANK()
+  - ROW_NUMBER()
+  - running totals
+  - moving averages
+- Date parsing and trend analysis using TO_TIMESTAMP() and DATE_TRUNC()
+- Profit margin calculations and NULL handling using NULLIF()
+- Customer and regional ranking analysis
+- Operational and profitability analytics
+
 ## Future Improvements
