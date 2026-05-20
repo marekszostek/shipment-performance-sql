@@ -16,6 +16,15 @@ The project was a simulation of a real-world analytics workflow using PostgreSQL
 
 ## Dataset
 
+The project uses the DataCo Smart Supply Chain dataset. It contains over 180,000 records related to:
+- customer orders and product categories,
+- shipment information and modes, 
+- delivery performance, 
+- sales and profit metrics,
+- regional operations. 
+
+The dataset is a simulation of real-world supply chain data and includes operational, financial and customer-related data which are used to conduct business analysis.
+
 ## Tech Stack
 
 ## Project Workflow
