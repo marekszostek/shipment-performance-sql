@@ -79,10 +79,9 @@ The dataset is a simulation of real-world supply chain data and includes operati
 - Western Europe generated the highest total revenue and shipment volume exceeding 10,000 orders. Central America ranked second, just behind Western Europe. The rest of regions generated much lower revenue. 
 - Customer ID 2641 generated the highest overall profit despite not having the most orders, indicating high customer value and high profitability per order. 
 
-## SQL Techniques Used
+## Analytical Techniques Used
 
-- Aggregation functions (SUM, AVG, COUNT)
-- GROUP BY analysis
+- SQL aggregations and KPI analysis
 - Common Table Expressions (CTEs)
 - Window functions:
   - RANK()
@@ -92,6 +91,9 @@ The dataset is a simulation of real-world supply chain data and includes operati
   - moving averages
 - Date parsing and trend analysis using TO_TIMESTAMP() and DATE_TRUNC()
 - Profit margin calculations and NULL handling using NULLIF()
+- ETL workflow using Python and Pandas
+- CSV import automation with SQLAlchemy
+- Data cleaning and preprocessing
 - Customer and regional ranking analysis
 - Operational and profitability analytics
 
