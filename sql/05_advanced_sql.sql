@@ -104,3 +104,92 @@ SELECT *
 FROM customer_segment_analysis
 
 ORDER BY total_sales DESC;
+
+-- Top customers within each region using DENSE_RANK()
+
+SELECT *
+
+FROM (
+
+    SELECT
+        "Order Region",
+
+        "Customer Id",
+
+        ROUND(SUM("Sales")::numeric, 2) AS total_sales,
+
+        DENSE_RANK() OVER(
+            PARTITION BY "Order Region"
+            ORDER BY SUM("Sales") DESC
+        ) AS regional_rank
+
+    FROM supply_chain_data
+
+    GROUP BY
+        "Order Region",
+        "Customer Id"
+
+) ranked_customers
+
+WHERE regional_rank <= 3
+
+ORDER BY
+    "Order Region",
+    regional_rank;
+
+-- Monthly sales trend analysis
+
+SELECT
+    DATE_TRUNC(
+        'month',
+        TO_TIMESTAMP(
+            "order date (DateOrders)",
+            'MM/DD/YYYY HH24:MI'
+        )
+    ) AS sales_month,
+
+    ROUND(SUM("Sales")::numeric, 2) AS monthly_sales
+
+FROM supply_chain_data
+
+GROUP BY sales_month
+
+ORDER BY sales_month;
+
+-- Moving average of monthly sales
+
+WITH monthly_sales AS (
+
+    SELECT
+        DATE_TRUNC(
+            'month',
+            TO_TIMESTAMP(
+                "order date (DateOrders)",
+                'MM/DD/YYYY HH24:MI'
+            )
+        ) AS sales_month,
+
+        ROUND(SUM("Sales")::numeric, 2) AS monthly_sales
+
+    FROM supply_chain_data
+
+    GROUP BY sales_month
+
+)
+
+SELECT
+    sales_month,
+
+    monthly_sales,
+
+    ROUND(
+        AVG(monthly_sales) OVER(
+            ORDER BY sales_month
+            ROWS BETWEEN 2 PRECEDING AND CURRENT ROW
+        )::numeric,
+        2
+    ) AS moving_avg_3_months
+
+FROM monthly_sales
+
+ORDER BY sales_month;
