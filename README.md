@@ -70,6 +70,15 @@ The dataset is a simulation of real-world supply chain data and includes operati
 
 ## Key Insights
 
+- Golf Bags & Carts was the product category with the highest profit margin percentage (17,46%), then Fitness Accessories (14,77%) and Toys (14,75%)
+- The Consumer segment generated most of total orders
+- Most shipments experienced delivery delays, but more than 20% of shipments were delivered faster than scheduled
+- Central Africa, South of USA and Southeast Asia are the regions with the highest late delivery risk
+- Standard Class shipping had the highest shipment volume and longest delivery time, but was the most reliable mode and was used the most. 
+- First and Second Class shipping modes were used less frequently and were more often out of scheduled, but they were still faster modes than Standard Class
+- Western Europe generated the highest total revenue and shipment volume exceeding 10,000 orders. Central America ranked second, just behind Western Europe. The rest of regions generated much lower revenue. 
+- Customer ID 2641 generated the highest overall profit despite not having the most orders, indicating high customer value and high profitability per order. 
+
 ## SQL Techniques Used
 
 ## Future Improvements
