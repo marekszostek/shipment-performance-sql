@@ -59,6 +59,15 @@ The dataset is a simulation of real-world supply chain data and includes operati
 
 ## Key Business Questions
 
+- Which regions generate the highest revenue and profit?
+- Which products and categories are the most profitable?
+- Which shipping modes are the least efficient?
+- What is the risk of late deliveries depending on the region?
+- Which customer generate the highest income?
+- Are there products with high revenue but low profitability?
+- How does shipment performance change over time?
+- What operational bottlenecks can be identified?
+
 ## Key Insights
 
 ## SQL Techniques Used
