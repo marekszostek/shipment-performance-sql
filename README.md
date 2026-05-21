@@ -110,3 +110,30 @@ https://www.kaggle.com/datasets/shashwatwork/dataco-smart-supply-chain-for-big-d
 - Add sales and delivery forecasting analysis
 - Automate the ETL pipeline for regular database updates
 - Expand customer segmentation and profitability analysis
+
+## Power BI Dashboard
+
+The project also includes an interactive Power BI dashboard focused on:
+- shipment performance,
+- profitability analysis,
+- delivery risk,
+- regional revenue,
+- shipping efficiency trends.
+
+### Dashboard Features
+- KPI overview cards
+- Revenue and profit analysis
+- Delivery risk monitoring
+- Shipping mode performance analysis
+- Monthly revenue trends
+- Interactive filtering using slicers
+
+### Dashboard Preview
+
+#### KPI & Financial Overview
+
+![Dashboard Overview](screenshots/dashboard_overview.png)
+
+#### Operational Performance & Revenue Trends
+
+![Operational Analysis](screenshots/operational_analysis.png)
